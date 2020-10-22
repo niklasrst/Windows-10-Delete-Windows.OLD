@@ -12,7 +12,7 @@
     Niklas Rast
 #>
 
-$logFile = ('{0}\{1}.log' -f $env:Temp, [System.IO.Path]::GetFileNameWithoutExtension($MyInvocation.MyCommand.Name))
+$logFile = ('{0}\{1}.log' -f "C:\Windows\Logs", [System.IO.Path]::GetFileNameWithoutExtension($MyInvocation.MyCommand.Name))
 Start-Transcript -path $logFile
 
 #Check if the script run with administrator privilege
